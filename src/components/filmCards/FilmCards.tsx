@@ -1,6 +1,7 @@
 import React from "react";
-import style from "../filmCards/filmCards.module.scss";
+
 import {IFilm} from "../../pages/filmsPage/FilmsPage";
+import style from "../filmCards/filmCards.module.scss";
 
 interface IProps{
     props: IFilm;

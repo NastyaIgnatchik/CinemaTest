@@ -1,7 +1,9 @@
-import React from "react";
-import style from "../filmNumberDescription/filmNumberDescription.module.scss";
 import "../../pages/filmsPage/filmsPage.module.scss";
+
+import React from "react";
+
 import { IProps} from "../../pages/filmsPage/FilmsPage";
+import style from "../filmNumberDescription/filmNumberDescription.module.scss";
 
 const FilmNumberDescription = ({ film }: IProps) => {
   return (

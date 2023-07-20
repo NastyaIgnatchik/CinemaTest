@@ -17,8 +17,8 @@
 .filmInfo {
   height: auto;
   display: grid;
-  column-gap: 40px;
-  grid-template-columns: 35% 65%;
+  column-gap: 4%;
+  grid-template-columns: 36% 60%;
   grid-template-rows: 20px auto auto 80px auto auto auto;
   @media (max-width: 768px) {
     grid-template-columns: 1fr;

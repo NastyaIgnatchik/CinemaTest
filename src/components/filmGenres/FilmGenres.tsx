@@ -1,8 +1,10 @@
-import React from "react";
-import style from "../filmGenres/filmGenres.module.scss";
-import star from "../../assets/images/star.png";
 import "../../pages/filmsPage/filmsPage.module.scss";
+
+import React from "react";
+
+import star from "../../assets/images/star.png";
 import {IProps} from "../../pages/filmsPage/FilmsPage";
+import style from "../filmGenres/filmGenres.module.scss";
 
 interface IGenre{
     name:string;

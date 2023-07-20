@@ -1,46 +1,34 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import style from "../filmsPage/filmsPage.module.scss";
-import Marks from "../../components/marks/Marks";
-import FilmNumberDescription from "../../components/filmNumberDescription/FilmNumberDescription";
-import FilmDescription from "../../components/filmDescription/FilmDescription";
+
 import FilmBanner from "../../components/filmBanner/FilmBanner";
-import FilmInfo from "../../components/filmInfo/FilmInfo";
-import FilmGenres from "../../components/filmGenres/FilmGenres";
 import FilmCards from "../../components/filmCards/FilmCards";
+import FilmDescription from "../../components/filmDescription/FilmDescription";
+import FilmGenres from "../../components/filmGenres/FilmGenres";
+import FilmInfo from "../../components/filmInfo/FilmInfo";
+import FilmNumberDescription from "../../components/filmNumberDescription/FilmNumberDescription";
+import Marks from "../../components/marks/Marks";
+import style from "../filmsPage/filmsPage.module.scss";
+
+export interface ICountriesGenres{
+  name:string;
+}
 
 export interface IFilm {
   adult: boolean;
   backdrop_path: string;
-  belongs_to_collection: {
-    id: number;
-    name: string;
-    poster_path: string;
-    backdrop_path: string;
-  };
-  budget: number;
-  genres: any;
-  homepage: string;
+  genres: ICountriesGenres[];
   id: number;
-  imdb_id: string;
-  original_language: string;
   original_title: string;
   overview: string;
   popularity: number;
   poster_path: string;
-  production_companies: any;
-  production_countries: any;
+  production_countries:ICountriesGenres[];
   release_date: string;
-  revenue: number;
   runtime: number;
-  spoken_languages: any;
-  status: string;
-  tagline: string;
-  title: string;
-  video: boolean;
   vote_average: number;
-  vote_count: number;
 }
+
  export interface IProps{
   film: IFilm
 }

@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+
 import style from './navigation.module.scss'
 
 const Navigation = () => {

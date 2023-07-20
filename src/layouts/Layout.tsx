@@ -1,9 +1,10 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
-import Navigation from "../components/navigation/Navigation";
 import { AiOutlineSearch } from "react-icons/ai";
-import style from "./layout.module.scss";
+import { Outlet } from "react-router-dom";
+
 import images from "../assets/images/cinemas.png";
+import Navigation from "../components/navigation/Navigation";
+import style from "./layout.module.scss";
 
 const Layout = () => {
   return (

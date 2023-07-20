@@ -1,6 +1,7 @@
 import React from "react";
-import style from "../marks/marks.module.scss";
+
 import star from "../../assets/images/star.png";
+import style from "../marks/marks.module.scss";
 
 const Marks = () => {
   return (

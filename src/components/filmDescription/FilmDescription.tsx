@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import style from "../filmDescription/filmDescription.module.scss";
 import { GoTriangleDown } from "react-icons/go";
+
 import { IProps} from "../../pages/filmsPage/FilmsPage";
+import style from "../filmDescription/filmDescription.module.scss";
 
 const FilmDescription = ({ film }: IProps) => {
   const [isTextHidden, setIsTextHidden] = useState<boolean>(true);

@@ -1,7 +1,8 @@
 import React from "react";
-import style from "../filmBanner/filmBanner.module.scss";
 import { BsFillPlayFill } from "react-icons/bs";
+
 import {IProps} from "../../pages/filmsPage/FilmsPage";
+import style from "../filmBanner/filmBanner.module.scss";
 
 const FilmBanner = ({ film }: IProps) => {
   return (
