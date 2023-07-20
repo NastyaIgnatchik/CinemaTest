@@ -1,0 +1,9 @@
+{
+  "trailingComma": "es6",
+  "tabWidth": 2,
+  "PrintWidth": 80,
+  "bracketSpacing": false,
+  "semi": true,
+  "BracketLine": true
+
+}

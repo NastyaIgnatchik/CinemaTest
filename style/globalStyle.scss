@@ -1,0 +1,42 @@
+
+@mixin gradient( $list) {
+  background: -webkit-linear-gradient( $list);
+  background: -moz-linear-gradient( $list);
+  background: -o-linear-gradient( $list);
+  background: linear-gradient( $list);
+}
+$list1: lighten(#430f29,6%) 6% 10%, #430f29 24%;
+
+
+body {
+  margin: 0;
+  @include gradient( $list1);
+  background-repeat: no-repeat;
+
+
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+}
+p,article{
+  color: white;
+}
+button{
+  color: white;
+}
+h1,
+h2,
+h4,
+h5 {
+  font-size: 18px;
+  color: white;
+}
+
+@media (max-width: 640px) {
+  * {
+    font-size: 14px;
+  }
+}

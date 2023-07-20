@@ -1,0 +1,26 @@
+@import '../../pages/filmsPage/filmsPage.module.scss';
+
+.textInfoGenres{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, auto)) ;
+  gap:3%;
+  padding: 10px 0;
+  justify-content: start;
+  align-content: start;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start:3 ;
+  grid-row-end:4;
+  p{
+    background:black;
+    color: white;
+    padding: 5px;
+  }
+  @media (max-width: 768px) {
+    margin-bottom: 10px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start:4 ;
+    grid-row-end:5;
+  }
+}

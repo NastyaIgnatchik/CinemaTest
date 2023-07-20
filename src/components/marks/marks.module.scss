@@ -1,0 +1,63 @@
+@import "../../pages/filmsPage/filmsPage.module.scss";
+
+.marks {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  padding: 7px 15px;
+  align-content: start;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid white;
+  @media (max-width: 768px) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+  @media (max-width: 640px) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    border: none;
+    margin-top: 10px;
+    padding: 7px 0;
+  }
+  .marksContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .marksContainerTitle {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 5px;
+      p {
+        color: lightgrey;
+      }
+    }
+
+    .marksContainerMarks {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      h1 {
+        font-size: 20px;
+      }
+    }
+
+    .numberWithBorder {
+      border-right: 2px solid white;
+      padding-right: 10px;
+      height: 50px;
+      line-height: 50px;
+      margin-right: 10px;
+    }
+  }
+}

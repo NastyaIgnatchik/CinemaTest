@@ -1,0 +1,40 @@
+@import "../../pages/filmsPage/filmsPage.module.scss";
+
+.numberDescription {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, auto));
+  gap: 4%;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  @media (max-width: 768px) {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 10px 0;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 8;
+  }
+  @media (max-width: 640px) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 8;
+    grid-row-end: 9;
+    border: none;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+  }
+
+  article {
+    margin-bottom: 5px;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+  }
+
+}

@@ -1,0 +1,59 @@
+
+.filmDescription{
+  display: grid;
+  grid-template-rows: repeat(3,auto);
+  gap:7px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start:7 ;
+  grid-row-end:8;
+  p{
+    padding: 5px 0;
+  }
+  @media (max-width: 768px) {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start:6;
+    grid-row-end:7;
+  }
+  @media (max-width: 640px){
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:7;
+    grid-row-end:8;
+  }
+}
+.thumbnails{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-top: 5px;
+
+  .filmDescriptionImg{
+    width: 30%;
+    @media (max-width: 640px){
+      width: 100%;
+
+    }
+  }
+  @media (max-width: 640px){
+    flex-direction: column;
+
+  }
+}
+.seeMoreButtonActive{
+  color: orange;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+
+}
+.seeMoreButton{
+  display: none;
+}
+.filmDescriptionTextHidden{
+  height: 30px;
+  overflow: hidden;
+}
