@@ -27,7 +27,7 @@ npm run build
     ├── /assets - images/fonts
     ├── /components - page components
     ├── /pages 
-    ├── /layouts - pages routing
+    ├── /layouts - pages layout
     └── /types - declare modules
 └── /app - skeleton pages
 └── /index - assembly entry point
@@ -43,7 +43,7 @@ npm run build
     └── /pages
         └── /page directory
                 ├── [PageName].tsx
-                └── pageStyles.module.less
+                └── pageStyles.module.scss
 ```
 
 
