@@ -14,7 +14,7 @@ npm run build
 ## Stack
 
 - React 18.2.0
-- SCSS (using.module.less)
+- SCSS (using.module.sess)
 - Typescript 
 - Webpack
 
